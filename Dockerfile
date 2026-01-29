@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:2.9.0-cuda12.8-cudnn9-devel
+FROM nvidia/cuda:11.80-cudnn8-devel-ubuntu20.04
 RUN apt update && apt install -y openssh-server && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
