@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.80-cudnn8-devel-ubuntu20.04
+FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu20.04
 RUN apt update && apt install -y openssh-server && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
